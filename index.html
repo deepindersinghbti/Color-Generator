@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Color Generator</title>
+</head>
+
+<body>
+    <h1 align="center">Color Generator</h1>
+    <br>
+
+
+    <table border="5" align="center">
+        <th id="redHead">Red</th>
+        <th id="greenHead">Green</th>
+        <th id="blueHead">Blue</th>
+
+        <tr>
+            <td><input type="range" min="0" max="255" value="0" class="slider" id="redRange" oninput="updateColor();">
+            </td>
+
+            <td><input type="range" min="0" max="255" value="0" class="slider" id="greenRange" oninput="updateColor();">
+            </td>
+
+            <td><input type="range" min="0" max="255" value="0" class="slider" id="blueRange" oninput="updateColor();">
+            </td>
+
+        </tr>
+        <tr>
+            <td id="redCell">0</td>
+            <td id="greenCell">0</td>
+            <td id="blueCell">0</td>
+        </tr>
+    </table>
+
+    <h3>Your generated color:</h3>
+
+    <!-- Creating the preview box -->
+    <div id="previewBox"></div>
+
+    <br>
+    <br>
+
+    <div id="buttonContainer">
+        <button id="copyBt" onclick="copyCode();">
+            Copy color code</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

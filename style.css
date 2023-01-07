@@ -1,0 +1,30 @@
+    #previewBox {
+        background-color: black;
+        width: 150px;
+        height: 50px;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+
+    .slider {
+        appearance: slider-vertical;
+        -webkit-appearance: slider-vertical
+    }
+
+    #redCell,
+    #greenCell,
+    #blueCell {
+        text-align: center;
+    }
+
+    #redHead::selection {
+        background-color: rgb(255, 0, 0);
+    }
+
+    #greenHead::selection {
+        background-color: rgb(0, 255, 0);
+    }
+
+    #blueHead::selection {
+        background-color: rgb(0, 255, 255);
+    }
