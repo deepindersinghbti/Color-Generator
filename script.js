@@ -13,10 +13,6 @@ greenOutput.innerHTML = greenSlider.value;
 var blueOutput = document.getElementById("blueSpan");
 blueOutput.innerHTML = blueSlider.value;
 
-
-
-
-
 function updateColor() {
     //Combine the values of red, green and blue into one single variable in rgb(r,g,b) format
     var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
@@ -53,7 +49,6 @@ function greenFunc() {
         greenOutput.innerHTML = this.value;
     }
 }
-
 
 function blueFunc() {
     blueSlider.oninput = function () {
