@@ -4,13 +4,13 @@ var greenSlider = document.getElementById("greenRange");
 var blueSlider = document.getElementById("blueRange");
 
 //Fetch the HTML spans in the document
-var redOutput = document.getElementById("redSpan");
+var redOutput = document.getElementById("redCell");
 redOutput.innerHTML = redSlider.value;
 
-var greenOutput = document.getElementById("greenSpan");
+var greenOutput = document.getElementById("greenCell");
 greenOutput.innerHTML = greenSlider.value;
 
-var blueOutput = document.getElementById("blueSpan");
+var blueOutput = document.getElementById("blueCell");
 blueOutput.innerHTML = blueSlider.value;
 
 function updateColor() {
@@ -29,7 +29,7 @@ function updateColor() {
 
 function copyCode() {
     var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
-
+    
     //Copy the color code to clipboard
     navigator.clipboard.writeText(generatedColor);
 
