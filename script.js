@@ -21,7 +21,7 @@ function updateColor() {
     let item = document.querySelector('div');
     item.style.setProperty('background-color', generatedColor);
 
-    //Display the value of each color in the bottom cell of each column
+    // Display the value of each color in the bottom cell of each column
     document.getElementById('redCell').innerHTML = redSlider.value;
     document.getElementById('greenCell').innerHTML = greenSlider.value;
     document.getElementById('blueCell').innerHTML = blueSlider.value;
@@ -37,21 +37,22 @@ function copyCode() {
     alert("Color code copied to clipboard!");
 }
 
-//Add event listeners to the sliders
-function redFunc() {
+//Update the value of each color in the table span when the slider is moved
+function updateRedVal() {
     redSlider.oninput = function () {
         redOutput.innerHTML = this.value;
     }
 }
 
-function greenFunc() {
+function updateGreenVal() {
     greenSlider.oninput = function () {
         greenOutput.innerHTML = this.value;
     }
 }
 
-function blueFunc() {
+function updateBlueVal() {
     blueSlider.oninput = function () {
         blueOutput.innerHTML = this.value;
     }
 }
+
