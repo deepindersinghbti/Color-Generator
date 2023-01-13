@@ -21,9 +21,12 @@ function updateColor() {
 }
 
 function copyCode() {
+    var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
+    
     //Copy the color code to clipboard
     navigator.clipboard.writeText(generatedColor);
 
     //Alert message
     alert("Color code copied to clipboard!");
 }
+
