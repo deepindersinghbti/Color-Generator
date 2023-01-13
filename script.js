@@ -10,7 +10,7 @@ function updateColor() {
     //Combine the values of red, green and blue into one single variable in rgb(r,g,b) format
     var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
 
-    //Change the color of the preview box when the slider is moved
+    //Update the color of the preview box as the sliders are moved
     let item = document.querySelector('div');
     item.style.setProperty('background-color', generatedColor);
 
