@@ -3,9 +3,6 @@ var redSlider = document.getElementById("redRange");
 var greenSlider = document.getElementById("greenRange");
 var blueSlider = document.getElementById("blueRange");
 
-//Combine the values of red, green and blue into one single variable in rgb(r,g,b) format
-var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
-
 function updateColor() {
     //Combine the values of red, green and blue into one single variable in rgb(r,g,b) format
     var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
