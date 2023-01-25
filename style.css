@@ -8,7 +8,6 @@
 
     .slider {
         appearance: slider-vertical;
-        -webkit-appearance: slider-vertical;
     }
 
     #redCell,
