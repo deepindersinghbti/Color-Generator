@@ -26,3 +26,4 @@ function copyCode() {
     //Alert message
     alert("Color code copied to clipboard!");
 }
+
