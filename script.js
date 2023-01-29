@@ -8,6 +8,8 @@ function updateColor() {
     var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
 
     //Update the color of the preview box as the sliders are moved
+    let item = document.querySelector('div');
+    item.style.setProperty('background-color', generatedColor);
 
     //Display the value of each color in the bottom cell of each column
     document.getElementById('redCell').innerHTML = redSlider.value;
@@ -24,4 +26,3 @@ function copyCode() {
     //Alert message
     alert("Color code copied to clipboard!");
 }
-
