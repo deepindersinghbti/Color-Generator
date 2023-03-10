@@ -3,9 +3,14 @@ var redSlider = document.getElementById("redRange");
 var greenSlider = document.getElementById("greenRange");
 var blueSlider = document.getElementById("blueRange");
 
-function updateColor() {
+function generateColorString(redValue, greenValue, blueValue) {
     //Combine the values of red, green and blue into one single variable in rgb(r,g,b) format
-    var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
+    return "rgb(" + redValue + "," + greenValue + "," + blueValue + ")";
+}
+
+function updateColor() {
+    //Use the generateColorString function to generate the color string
+    var generatedColor = generateColorString(redSlider.value, greenSlider.value, blueSlider.value);
 
     //Update the color of the preview box as the sliders are moved
     let item = document.querySelector('div');
@@ -18,7 +23,8 @@ function updateColor() {
 }
 
 function copyCode() {
-    var generatedColor = "rgb(" + redSlider.value + "," + greenSlider.value + "," + blueSlider.value + ")"
+    //Use the generateColorString function to generate the color string
+    var generatedColor = generateColorString(redSlider.value, greenSlider.value, blueSlider.value);
 
     //Copy the color code to clipboard
     navigator.clipboard.writeText(generatedColor);
@@ -26,4 +32,3 @@ function copyCode() {
     //Alert message
     alert("Color code copied to clipboard!");
 }
-
